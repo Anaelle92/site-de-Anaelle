@@ -1,0 +1,68 @@
+ /* ===== FOND FUTURISTE ORANGE ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff5f00, #ff9900, #ff3c00);
+    background-size: 400% 400%;
+    animation: fondAnime 10s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Animation du fond */
+@keyframes fondAnime {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* ===== TITRE ===== */
+h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 0 0 20px yellow;
+    animation: neon 2s infinite alternate;
+}
+
+@keyframes neon {
+    from { text-shadow: 0 0 10px white; }
+    to { text-shadow: 0 0 30px yellow; }
+}
+
+/* ===== LIENS STYLE MENU FUTURISTE ===== */
+a {
+    display: block;
+    width: 250px;
+    text-align: center;
+    margin: 10px;
+    padding: 12px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff3c00, #ff9900);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.4s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/* Effet au survol */
+a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px yellow;
+}
+
+/* Animation d'apparition */
+a {
+    animation: apparition 1.2s ease-in-out;
+}
+
+@keyframes apparition {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
