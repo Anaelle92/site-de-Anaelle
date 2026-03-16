@@ -1,0 +1,31 @@
+/* Fond général rose clair */
+body{
+    margin:0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg,#ffeaf4,#ffd9ec,#ffcfe6);
+    text-align:center;
+}
+
+/* Titre */
+h1{
+    margin:30px;
+    font-size:40px;
+    color:#d63384;
+    letter-spacing:2px;
+}
+
+/* Organisation des iframes pour avoir un menu symétrique */
+iframe{
+    border:none;
+    border-radius:15px;
+    background:white;
+    box-shadow:0 6px 20px rgba(0,0,0,0.1);
+    margin:10px;
+}
+
+/* Animation légère futuriste */
+iframe:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+    box-shadow:0 10px 30px rgba(255,182,217,0.6);
+}
